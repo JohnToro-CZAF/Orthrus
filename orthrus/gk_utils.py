@@ -145,7 +145,6 @@ def create_splice_track(t):
     for exon in t.exons:
         cumulative_len += len(exon)
         splicing_track[cumulative_len - 1 : cumulative_len] = 1
-
     return splicing_track
 
 
